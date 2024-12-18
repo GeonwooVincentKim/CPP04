@@ -6,7 +6,7 @@
 /*   By: geonwkim <geonwkim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/14 22:06:48 by geonwkim          #+#    #+#             */
-/*   Updated: 2024/12/18 21:02:35 by geonwkim         ###   ########.fr       */
+/*   Updated: 2024/12/18 22:49:46 by geonwkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ protected:
 public:
     Animal();
     Animal(const std::string& type);
+    Animal& operator=(const Animal& other);
     virtual ~Animal();
 
     virtual void makeSound() const; // Pure virtual function to make class abstract

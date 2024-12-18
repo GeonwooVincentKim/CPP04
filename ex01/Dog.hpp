@@ -6,7 +6,7 @@
 /*   By: geonwkim <geonwkim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/14 22:13:44 by geonwkim          #+#    #+#             */
-/*   Updated: 2024/12/18 21:08:05 by geonwkim         ###   ########.fr       */
+/*   Updated: 2024/12/18 22:55:42 by geonwkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 class Dog : public Animal {
 private:
-    Brain* brain;
+    Brain *brain;
 
 public:
     Dog();

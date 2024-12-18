@@ -6,28 +6,28 @@
 /*   By: geonwkim <geonwkim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/14 22:13:20 by geonwkim          #+#    #+#             */
-/*   Updated: 2024/12/14 22:13:21 by geonwkim         ###   ########.fr       */
+/*   Updated: 2024/12/18 22:45:16 by geonwkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Brain.hpp"
 
 Brain::Brain() {
-    std::cout << "Brain constructor called." << std::endl;
+    // std::cout << "Brain constructor called." << std::endl;
     for (int i = 0; i < 100; ++i) {
         ideas[i] = "Default idea";
     }
 }
 
 Brain::Brain(const Brain& other) {
-    std::cout << "Brain copy constructor called." << std::endl;
+    // std::cout << "Brain copy constructor called." << std::endl;
     for (int i = 0; i < 100; ++i) {
         ideas[i] = other.ideas[i];
     }
 }
 
 Brain& Brain::operator=(const Brain& other) {
-    std::cout << "Brain assignment operator called." << std::endl;
+    // std::cout << "Brain assignment operator called." << std::endl;
     if (this != &other) {
         for (int i = 0; i < 100; ++i) {
             ideas[i] = other.ideas[i];
@@ -37,7 +37,7 @@ Brain& Brain::operator=(const Brain& other) {
 }
 
 Brain::~Brain() {
-    std::cout << "Brain destructor called." << std::endl;
+    // std::cout << "Brain destructor called." << std::endl;
 }
 
 void Brain::setIdea(int index, const std::string& idea) {
