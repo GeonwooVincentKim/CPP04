@@ -6,7 +6,7 @@
 /*   By: geonwkim <geonwkim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/14 22:06:52 by geonwkim          #+#    #+#             */
-/*   Updated: 2024/12/14 22:10:37 by geonwkim         ###   ########.fr       */
+/*   Updated: 2024/12/18 20:57:30 by geonwkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,11 @@
 class Cat : public Animal {
 public:
     Cat();
-    ~Cat();
+    Cat(const Cat& other);
+    Cat& operator=(const Cat& other);
+    virtual ~Cat();
 
-    void makeSound() const;
+    void makeSound() const override;
 };
 
 #endif

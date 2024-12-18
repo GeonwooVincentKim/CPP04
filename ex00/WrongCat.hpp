@@ -6,7 +6,7 @@
 /*   By: geonwkim <geonwkim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/14 22:07:08 by geonwkim          #+#    #+#             */
-/*   Updated: 2024/12/14 22:07:08 by geonwkim         ###   ########.fr       */
+/*   Updated: 2024/12/18 20:53:02 by geonwkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 class WrongCat : public WrongAnimal {
 public:
     WrongCat();
-    ~WrongCat();
+    virtual ~WrongCat();
 
     void makeSound() const;
 };

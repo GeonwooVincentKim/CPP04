@@ -6,15 +6,26 @@
 /*   By: geonwkim <geonwkim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/14 22:06:50 by geonwkim          #+#    #+#             */
-/*   Updated: 2024/12/14 22:06:50 by geonwkim         ###   ########.fr       */
+/*   Updated: 2024/12/18 20:57:46 by geonwkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Cat.hpp"
 
-Cat::Cat() {
-    type = "Cat";
+Cat::Cat() : Animal("Cat") {
     std::cout << "Cat constructor called." << std::endl;
+}
+
+Cat::Cat(const Cat& other) : Animal(other) {
+    std::cout << "Cat copy constructor called." << std::endl;
+}
+
+Cat& Cat::operator=(const Cat& other) {
+    if (this != &other) {
+        Animal::operator=(other);
+    }
+    std::cout << "Cat assignment operator called." << std::endl;
+    return *this;
 }
 
 Cat::~Cat() {
