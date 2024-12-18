@@ -6,14 +6,14 @@
 #    By: geonwkim <geonwkim@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/14 22:17:42 by geonwkim          #+#    #+#              #
-#    Updated: 2024/12/14 22:19:08 by geonwkim         ###   ########.fr        #
+#    Updated: 2024/12/18 21:11:00 by geonwkim         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
-NAME = claptrap
+NAME = ex02
 SRCS = main.cpp AAnimal.cpp Dog.cpp Cat.cpp Brain.cpp
 OBJS = $(SRCS:.cpp=.o)
 RM = rm -f
