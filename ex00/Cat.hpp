@@ -6,7 +6,7 @@
 /*   By: geonwkim <geonwkim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/14 22:06:52 by geonwkim          #+#    #+#             */
-/*   Updated: 2024/12/18 20:57:30 by geonwkim         ###   ########.fr       */
+/*   Updated: 2024/12/18 21:01:36 by geonwkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ public:
     Cat& operator=(const Cat& other);
     virtual ~Cat();
 
-    void makeSound() const override;
+    virtual void makeSound() const;
 };
 
 #endif
