@@ -6,7 +6,7 @@
 /*   By: geonwkim <geonwkim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/14 22:13:53 by geonwkim          #+#    #+#             */
-/*   Updated: 2024/12/14 22:13:53 by geonwkim         ###   ########.fr       */
+/*   Updated: 2024/12/18 21:08:25 by geonwkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ Dog& Dog::operator=(const Dog& other) {
         Animal::operator=(other);
         *brain = *other.brain;
     }
+    std::cout << "Dog assignment operator called." << std::endl;
     return *this;
 }
 
