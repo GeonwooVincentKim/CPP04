@@ -6,7 +6,7 @@
 /*   By: geonwkim <geonwkim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/14 22:06:54 by geonwkim          #+#    #+#             */
-/*   Updated: 2024/12/18 21:01:21 by geonwkim         ###   ########.fr       */
+/*   Updated: 2025/01/03 20:14:28 by geonwkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@ public:
     Dog();
     Dog(const Dog& other);
     Dog& operator=(const Dog& other);
-    virtual ~Dog();
+    ~Dog();
 
-    virtual void makeSound() const;
+    void makeSound() const;
 };
 
 #endif
