@@ -6,7 +6,7 @@
 /*   By: geonwkim <geonwkim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/14 22:14:09 by geonwkim          #+#    #+#             */
-/*   Updated: 2024/12/18 21:08:46 by geonwkim         ###   ########.fr       */
+/*   Updated: 2025/01/03 20:46:58 by geonwkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,10 @@ public:
     Cat();
     Cat(const Cat& other);
     Cat& operator=(const Cat& other);
-    virtual ~Cat();
+    ~Cat();
 
-    virtual void makeSound() const;
-    Brain* getBrain() const;
+    void makeSound() const;
+    // Brain* getBrain() const;
 };
 
 #endif
