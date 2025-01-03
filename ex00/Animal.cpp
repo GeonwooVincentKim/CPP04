@@ -6,7 +6,7 @@
 /*   By: geonwkim <geonwkim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/14 22:06:46 by geonwkim          #+#    #+#             */
-/*   Updated: 2024/12/18 23:03:51 by geonwkim         ###   ########.fr       */
+/*   Updated: 2025/01/03 20:05:54 by geonwkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,19 @@ Animal::Animal(const std::string& type) : type(type) {
     std::cout << "Animal parameterized constructor called." << std::endl;
 }
 
+// Animal::Animal(const Animal& origin)
+// {
+//     *this = origin;
+//     std::cout << "Animal copy constructor called." << std::endl;
+// }
+
+Animal::Animal(const Animal& other) : type(other.type) {
+    std::cout << "Animal copy constructor called." << std::endl;
+}
+
 Animal& Animal::operator=(const Animal& other) {
     if (this != &other) {
-        type = other.type;
+        this->type = other.type;
     }
     std::cout << "Animal assignment operator called." << std::endl;
     return *this;

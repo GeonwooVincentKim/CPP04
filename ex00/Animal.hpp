@@ -6,7 +6,7 @@
 /*   By: geonwkim <geonwkim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/14 22:06:48 by geonwkim          #+#    #+#             */
-/*   Updated: 2024/12/18 22:49:46 by geonwkim         ###   ########.fr       */
+/*   Updated: 2025/01/03 20:05:11 by geonwkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ protected:
 public:
     Animal();
     Animal(const std::string& type);
+    Animal(const Animal& other);
     Animal& operator=(const Animal& other);
     virtual ~Animal();
 
